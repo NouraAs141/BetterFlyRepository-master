@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewSignup"
+        android:layout_width="303dp"
+        android:layout_height="34dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/dha"
+        android:backgroundTint="@color/lightsteelblue"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewforget" />
+
+
+    <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="289dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/password"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="48dp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="289dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/email"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="48dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="364dp"
+            android:layout_height="108dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="95dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="375dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewforget"
+            android:layout_width="166dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/forget_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/sign_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+</android.support.constraint.ConstraintLayout>

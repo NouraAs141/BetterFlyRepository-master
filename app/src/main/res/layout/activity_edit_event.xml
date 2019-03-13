@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditEvent">
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="Event's Name:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eventdate"
+        android:layout_width="101dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Date:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventname" />
+
+    <TextView
+        android:id="@+id/numOfV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Number of Volunteers:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventdate" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Location:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numOfV" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="Description:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="199dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="name"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/eventname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="date"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/eventdate"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="183dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="numbeer of volunteers"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/numOfV"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <EditText
+        android:id="@+id/loc"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="location"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/location"
+        app:layout_constraintTop_toBottomOf="@+id/numOfV" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="219dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/bluesh"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

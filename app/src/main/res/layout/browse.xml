@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eventRetrievd">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="2dp"
+        android:background="@color/bluesh">
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBackground="@color/lightslategray"
+        app:searchSuggestionBackground="@color/bluesh"
+        app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+        app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        >
+
+    </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="0dp"
+        android:fastScrollAlwaysVisible="true"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/menu_vnavigation" />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApproveOrg">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="60dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Name:"
+        android:textColor="#444444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/EvName"
+        android:layout_width="208dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="name"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/OrgName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="E-mail:"
+        android:textColor="#444444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/OrgName"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="email"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <TextView
+        android:id="@+id/approvalID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Approval ID:"
+        android:textColor="#444444"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/aprove"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="appID"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/approvalID"
+        app:layout_constraintTop_toBottomOf="@+id/OrgName"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Request"
+        android:layout_width="265dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="78dp"
+        android:background="@color/bluesh"
+        android:text="Accept"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/reject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aprove" />
+
+    <Button
+        android:id="@+id/reject"
+        android:layout_width="265dp"
+        android:layout_height="55dp"
+
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="192dp"
+
+        android:background="@color/bluesh"
+        android:text="Reject"
+        android:textColor="@color/important"
+        android:textSize="22sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+</android.support.constraint.ConstraintLayout>

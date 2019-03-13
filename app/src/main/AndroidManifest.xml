@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.betterfly">
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+
+        <activity android:name=".postEvent" />
+        <activity android:name=".ApproveOrg" />
+        <activity android:name=".forgetPass" />
+        <activity android:name=".vHome" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".vsignUp" />
+        <activity android:name=".osignUp" />
+        <activity android:name=".OrgProcessActivity" />
+        <activity android:name=".dataRetrieved" />
+        <activity android:name=".RequestToVounteer" />
+        <activity android:name=".eventPage" />
+        <activity android:name=".eventRetrievd" />
+    </application>
+
+</manifest>

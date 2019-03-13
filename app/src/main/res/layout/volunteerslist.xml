@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/VName"
+            android:layout_width="438dp"
+            android:layout_height="wrap_content"
+            android:text="Volunteer's Name:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/VDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/remail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="email"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+</LinearLayout>
