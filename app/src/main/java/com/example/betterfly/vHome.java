@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,7 +23,7 @@ public class vHome extends AppCompatActivity implements View.OnClickListener {
     //dynamic color change attribute
 private Color_Background_colors mColor =  new Color_Background_colors();
 private Button mnext;
-private LinearLayout mlayout;
+private RelativeLayout mlayout;
 
         @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,7 @@ private LinearLayout mlayout;
         setContentView(R.layout.activity_home);
         //ID for dynamic color
             mnext = (Button) findViewById(R.id.coloring);
-
-
+            mlayout = (RelativeLayout)findViewById(R.id.HomeLayout);
 
         //firebase
          myAuth =  FirebaseAuth.getInstance();
@@ -52,7 +52,7 @@ private LinearLayout mlayout;
 
                 //button action coloring
             case R.id.coloring:
-                mnext.setBackgroundColor(color);
+                mlayout.setBackgroundColor(color);
                 break;
         }
     }
